@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - CharityHub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-hands-helping"></i>
+                    CharityHub
+                </a>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#causes">Causes</a></li>
+                    <li><a href="donation.html">Donate</a></li>
+                    <li><a href="user_dashboard.html" class="active">Dashboard</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="auth-buttons">
+                    <div class="user-dropdown">
+                        <button class="btn">
+                            <i class="fas fa-user"></i> John Doe
+                            <i class="fas fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Profile</a>
+                            <a href="#">Settings</a>
+                            <a href="user_login.html">Logout</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="dashboard-header">
+                <div class="dashboard-title">
+                    <h2>User Dashboard</h2>
+                    <p>Welcome back, John! Here's your donation activity</p>
+                </div>
+                <a href="donation.html" class="btn btn-secondary">Make a Donation</a>
+            </div>
+            
+            <div class="stats-cards">
+                <div class="stat-card">
+                    <i class="fas fa-donate"></i>
+                    <h3>₹1,240</h3>
+                    <p>Total Donated</p>
+                </div>
+                
+                <div class="stat-card">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3>12</h3>
+                    <p>Causes Supported</p>
+                </div>
+                
+                <div class="stat-card">
+                    <i class="fas fa-trophy"></i>
+                    <h3>Gold</h3>
+                    <p>Donor Level</p>
+                </div>
+                
+                <div class="stat-card">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3>3</h3>
+                    <p>Recurring Donations</p>
+                </div>
+            </div>
+            
+            <div class="dashboard-section">
+                <div class="section-header">
+                    <h3>Recent Donations</h3>
+                    <a href="#" class="btn">View All</a>
+                </div>
+                
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Cause</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jun 15, 2025</td>
+                            <td>Clean Water Initiative</td>
+                            <td>₹150</td>
+                            <td><span class="status-badge completed">Completed</span></td>
+                        </tr>
+                        <tr>
+                            <td>Jun 10, 2025</td>
+                            <td>Education for All</td>
+                            <td>₹75</td>
+                            <td><span class="status-badge completed">Completed</span></td>
+                        </tr>
+                        <tr>
+                            <td>Jun 5, 2025</td>
+                            <td>Wildlife Conservation</td>
+                            <td>₹200</td>
+                            <td><span class="status-badge completed">Completed</span></td>
+                        </tr>
+                        <tr>
+                            <td>May 28, 2025</td>
+                            <td>Medical Aid in Remote Area</td>
+                            <td>₹100</td>
+                            <td><span class="status-badge completed">Completed</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="dashboard-section">
+                <div class="section-header">
+                    <h3>Recommended Causes</h3>
+                    <a href="#causes" class="btn">View All</a>
+                </div>
+                
+                <div class="causes-grid">
+                    <div class="cause-card">
+<div class="cause-image" style="background-image: url('https://etvbharatimages.akamaized.net/etvbharat/prod-images/23-04-2025/1200-675-24019356-thumbnail-16x9-jkgallery.gif');"></div>      
+                  <div class="cause-content">
+                            <h3>Financial Support for Pehalgam Victims</h3>
+                            <p>Providing emergency medical supplies and Financial support to victims.</p>
+                            
+                            <div class="cause-stats">
+                                <span><i class="fas fa-dollar-sign"></i> ₹32,500 raised</span>
+                                <span><i class="fas fa-bullseye"></i> ₹75,000 goal</span>
+                            </div>
+                            
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 43%;"></div>
+                            </div>
+                            
+                            <a href="donation.html" class="btn btn-block">Donate Now</a>
+                        </div>
+                    </div>
+                    
+                    <div class="cause-card">
+                        <div class="cause-image" style="background-image: url('https://images.bhaskarassets.com/web2images/1884/2025/06/12/comp-2_1749724791.gif');"></div>
+                        <div class="cause-content">
+                            <h3>Ahmedabad Airport Crash</h3>
+                            <p>Provide support for the died people in ahmedabad plane crash.</p>
+                            
+                            <div class="cause-stats">
+                                <span><i class="fas fa-dollar-sign"></i> ₹68,200 raised</span>
+                                <span><i class="fas fa-bullseye"></i> ₹100,000 goal</span>
+                            </div>
+                            
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 68%;"></div>
+                            </div>
+                            
+                            <a href="donation.html" class="btn btn-block">Donate Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

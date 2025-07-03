@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make a Donation - CharityHub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-hands-helping"></i>
+                    CharityHub
+                </a>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#causes">Causes</a></li>
+                    <li><a href="donation.html" class="active">Donate</a></li>
+                    <li><a href="user_dashboard.html">Dashboard</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="auth-buttons">
+                    <a href="user_login.html" class="btn">Login</a>
+                    <a href="user_register.html" class="btn btn-secondary">Register</a>
+                </div>
+                
+                <div class="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Make a Donation</h2>
+            <p class="section-subtitle">Support a cause that matters to you</p>
+            
+            <div class="donation-container">
+                <div class="cause-selection">
+                    <h3>Select a Cause</h3>
+                    <div class="causes-grid">
+                        <div class="cause-card selected">
+                            <div class="cause-image" style="background-image: url('https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80');"></div>
+                            <div class="cause-content">
+                                <h3>Clean Water for African Villages</h3>
+                                <p>Providing sustainable water solutions to remote communities in Sub-Saharan Africa.</p>
+                                
+                                <div class="cause-stats">
+                                    <span><i class="fas fa-dollar-sign"></i> ₹45,200 raised</span>
+                                    <span><i class="fas fa-bullseye"></i> ₹60,000 goal</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="cause-card">
+                            <div class="cause-image" style="background-image: url('https://images.unsplash.com/photo-1497215842964-222b430dc094?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');"></div>
+                            <div class="cause-content">
+                                <h3>Education for Refugee Children</h3>
+                                <p>Building schools and providing educational materials for displaced children in conflict zones.</p>
+                                
+                                <div class="cause-stats">
+                                    <span><i class="fas fa-dollar-sign"></i> ₹28,400 raised</span>
+                                    <span><i class="fas fa-bullseye"></i> ₹50,000 goal</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="cause-card">
+                            <div class="cause-image" style="background-image: url('https://images.unsplash.com/photo-1516549655169-df83a0774514?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');"></div>
+                            <div class="cause-content">
+                                <h3>Wildlife Conservation Fund</h3>
+                                <p>Protecting endangered species and preserving natural habitats around the globe.</p>
+                                
+                                <div class="cause-stats">
+                                    <span><i class="fas fa-dollar-sign"></i> ₹63,800 raised</span>
+                                    <span><i class="fas fa-bullseye"></i> ₹100,000 goal</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-container">
+                    <form id="donation-form">
+                        <div class="form-group">
+                            <label for="full-name">Full Name</label>
+                            <input type="text" id="full-name" class="form-control" placeholder="Enter your full name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" placeholder="Enter your email">
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="amount">Donation Amount ($)</label>
+                                <input type="number" id="amount" class="form-control" placeholder="50" min="1" value="50">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Recurring Donation</label>
+                                <div class="form-check-group">
+                                    <div class="form-check">
+                                        <input type="radio" id="one-time" name="recurring" value="one-time" checked>
+                                        <label for="one-time">One-time</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="radio" id="monthly" name="recurring" value="monthly">
+                                        <label for="monthly">Monthly</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="payment-method">Payment Method</label>
+                            <select id="payment-method" class="form-control">
+                                <option value="">Select payment method</option>
+                                <option value="credit">Credit Card</option>
+                                <option value="paypal">PayPal</option>
+                                <option value="bank">Bank Transfer</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message (Optional)</label>
+                            <textarea id="message" class="form-control" rows="4" placeholder="Add a personal message..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input type="checkbox" id="anonymous" class="form-check-input">
+                                <label for="anonymous" class="form-check-label">Donate anonymously</label>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-secondary btn-block">Donate Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

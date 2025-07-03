@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity Dashboard - CharityHub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-hands-helping"></i>
+                    CharityHub
+                </a>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#causes">Causes</a></li>
+                    <li><a href="donation.html">Donate</a></li>
+                    <li><a href="charity_dashboard.html" class="active">Dashboard</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="auth-buttons">
+                    <div class="user-dropdown">
+                        <button class="btn">
+                            <i class="fas fa-building"></i> Save the Earth
+                            <i class="fas fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Profile</a>
+                            <a href="#">Settings</a>
+                            <a href="charity_login.html">Logout</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="dashboard-header">
+                <div class="dashboard-title">
+                    <h2>Charity Dashboard</h2>
+                    <p>Welcome, Save the Earth! Manage your causes and donations</p>
+                </div>
+                <a href="#" class="btn btn-secondary" id="add-cause-btn">Add New Cause</a>
+            </div>
+            
+            <div class="stats-cards">
+                <div class="stat-card">
+                    <i class="fas fa-donate"></i>
+                    <h3>₹24,560</h3>
+                    <p>Total Received</p>
+                </div>
+                
+                <div class="stat-card">
+                    <i class="fas fa-users"></i>
+                    <h3>342</h3>
+                    <p>Donors</p>
+                </div>
+                
+                <div class="stat-card">
+                    <i class="fas fa-bullseye"></i>
+                    <h3>5</h3>
+                    <p>Active Causes</p>
+                </div>
+                
+                <div class="stat-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>+12%</h3>
+                    <p>This Month</p>
+                </div>
+            </div>
+            
+            <div class="dashboard-section">
+                <div class="section-header">
+                    <h3>Your Causes</h3>
+                </div>
+                
+                <div class="causes-grid">
+                    <div class="cause-card">
+                        <div class="cause-image" style="background-image: url('https://images.unsplash.com/photo-1516549655169-df83a0774514?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');"></div>
+                        <div class="cause-content">
+                            <h3>Wildlife Conservation Fund</h3>
+                            <p>Protecting endangered species and preserving natural habitats around the globe.</p>
+                            
+                            <div class="cause-stats">
+                                <span><i class="fas fa-dollar-sign"></i> ₹63,800 raised</span>
+                                <span><i class="fas fa-bullseye"></i> ₹100,000 goal</span>
+                            </div>
+                            
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 63%;"></div>
+                            </div>
+                            
+                            <div class="cause-actions">
+                                <button class="btn">Edit</button>
+                                <button class="btn btn-secondary">View Donations</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cause-card">
+                        <div class="cause-image" style="background-image: url('https://images.unsplash.com/photo-1497215842964-222b430dc094?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');"></div>
+                        <div class="cause-content">
+                            <h3>Education for Refugee Children</h3>
+                            <p>Building schools and providing educational materials for displaced children in conflict zones.</p>
+                            
+                            <div class="cause-stats">
+                                <span><i class="fas fa-dollar-sign"></i> ₹28,400 raised</span>
+                                <span><i class="fas fa-bullseye"></i> ₹50,000 goal</span>
+                            </div>
+                            
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 56%;"></div>
+                            </div>
+                            
+                            <div class="cause-actions">
+                                <button class="btn">Edit</button>
+                                <button class="btn btn-secondary">View Donations</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 30px;">
+                    <a href="#" class="btn">View All Causes</a>
+                </div>
+            </div>
+            
+            <div class="dashboard-section">
+                <div class="section-header">
+                    <h3>Recent Donations</h3>
+                    <a href="#" class="btn">View All</a>
+                </div>
+                
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Donor</th>
+                            <th>Cause</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jun 18, 2025</td>
+                            <td>Teja Bandi</td>
+                            <td>Wildlife Conservation</td>
+                            <td>₹50</td>
+                            <td><span class="status-badge completed">Completed</span></td>
+                        </tr>
+                        <tr>
+                            <td>Jun 17, 2023</td>
+                            <td>Viswa</td>
+                            <td>Education for Refugees</td>
+                            <td>₹100</td>
+                            <td><span class="status-badge completed">Completed</span></td>
+                        </tr>
+                        <tr>
+                            <td>Jun 15, 2023</td>
+                            <td>Surya</td>
+                            <td>Wildlife Conservation</td>
+                            <td>₹200</td>
+                            <td><span class="status-badge completed">Completed</span></td>
+                        </tr>
+                        <tr>
+                            <td>Jun 12, 2023</td>
+                            <td>ruthwik</td>
+                            <td>Education for Refugees</td>
+                            <td>₹75</td>
+                            <td><span class="status-badge completed">Completed</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
